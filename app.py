@@ -40,21 +40,21 @@ def get_code():
         nav_link.click()
 
         # 增加延遲以確保頁面加載完成
-        time.sleep(3)
+        time.sleep(2)
 
         # 修正錯誤的XPATH，這裡是猜測修正：
         target_element = wait.until(EC.presence_of_element_located((By.XPATH, "/html/body/div[1]/div/div[2]/ul/li[1]/a/div/h2")))
         target_element.click()
 
         # 增加延遲以確保頁面加載完成
-        time.sleep(3)
+        time.sleep(2)
 
         # 等待並點擊目標元素
         button1 = wait.until(EC.presence_of_element_located((By.XPATH, "/html/body/div[1]/div/div[2]/div[1]/button")))
         button1.click()
 
         # 增加延遲以確保頁面加載完成
-        time.sleep(3)
+        time.sleep(2)
 
         # 等待並點擊目標元素
         button2 = wait.until(EC.presence_of_element_located((By.XPATH, "/html/body/div[1]/div/div[2]/div[1]/div/div/div[2]/div[4]/button")))
